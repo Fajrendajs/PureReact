@@ -1,2 +1,0 @@
-# PureReact
-Created with CodeSandbox
