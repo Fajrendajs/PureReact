@@ -4,7 +4,22 @@ import ReactDOM from 'react-dom';
 import './styles.css';
 
 function HelloWorld(props) {
-  return <span>{props.song.name}</span>;
+  let isValid = false;
+  return (
+    <>
+      {isValid && 'valid'}
+      {!isValid && 'not valid'}
+      <Hello /> <World />
+    </>
+  );
+}
+
+function Hello() {
+  return <span>Hello</span>;
+}
+
+function World() {
+  return <span>World</span>;
 }
 
 const rootElement = document.getElementById('root');
