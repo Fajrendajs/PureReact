@@ -1,4 +1,62 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+.tweet {
+  border: 1 px solid #ccc;
+  width: 564 px;
+  min-height: 68 px;
+  padding: 10 px;
+  display: flex;
+  font-family: 'Helvetica', arial, sans-serif;
+  font-size: 14 px;
+  line-height: 18 px;
+}
+
+.avatar {
+  width: 48 px;
+  height: 48 px;
+  border-radius: 5 px;
+  margin-right: 10 px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5 em;
+  margin-right: 0.3 em;
+}
+
+.handle {
+  color: #8899a6;
+  font-size: 13 px;
+}
+
+.time {
+  padding-left: 0.3 em;
+  color: #8899a6;
+}
+
+.time::before {
+  content: '\00b7';
+  padding-right: 0.3 em;
+}
+
+.buttons {
+  margin-top: 10 px;
+  margin-left: 2 px;
+  font-size: 1.4 em;
+  color: #aab8c2;
+}
+
+.reply-button,
+.retweet-button,
+.like-button,
+.more-options-button {
+  width: 80px;
+  display: inline-block;
+}
+
+.like-count,
+.retweet-count {
+  position: relative;
+  bottom: 2px;
+  font-size: 13px;
+  margin-left: 6px;
+  font-weight: bold;
 }
